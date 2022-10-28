@@ -117,7 +117,7 @@ class _BodyDeState extends State<BodyDe> {
             ),
           ),
           Positioned(
-            top: 100,
+            top: 25,
             left: 30,
             child: Hero(
               tag: widget.model.imgAddress,
@@ -125,7 +125,7 @@ class _BodyDeState extends State<BodyDe> {
                 turns: AlwaysStoppedAnimation(-25 / 360),
                 child: Container(
                   width: width / 1.3,
-                  height: height / 4.3,
+                  height: height / 2.3,
                   child: Image(image: AssetImage(widget.model.imgAddress)),
                 ),
               ),
@@ -237,7 +237,7 @@ class _BodyDeState extends State<BodyDe> {
         child: Row(
           children: [
             Container(
-              width: width / 4.5,
+              width: width / 5,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   border: Border.all(color: Colors.grey, width: 1)),

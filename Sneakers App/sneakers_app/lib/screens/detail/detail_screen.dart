@@ -15,8 +15,7 @@ class DetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Scaffold(
-        
+      child: Scaffold(        
           extendBodyBehindAppBar: true,
           backgroundColor: backgroundColor,
           appBar: customAppBarDe(

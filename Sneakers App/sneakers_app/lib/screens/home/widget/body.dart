@@ -95,42 +95,42 @@ class _BodyState extends State<Body> {
   middleCategoriesWidget(width, height) {
     return Row(
       children: [
+        // Container(
+        //   margin: EdgeInsets.symmetric(horizontal: 20),
+        //   width: width / 16,
+        //   height: height / 2.7,
+        //   child: RotatedBox(
+        //     quarterTurns: -1,
+        //     child: ListView.builder(
+        //         itemCount: featured.length,
+        //         scrollDirection: Axis.horizontal,
+        //         itemBuilder: (context, index) {
+        //           return GestureDetector(
+        //             onTap: () {
+        //               setState(() {
+        //                 featuredcurrentIndex = index;
+        //               });
+        //             },
+        //             child: Padding(
+        //               padding: const EdgeInsets.symmetric(horizontal: 15),
+        //               child: Text(
+        //                 featured[index],
+        //                 style: TextStyle(
+        //                     fontSize: featuredcurrentIndex == index ? 19 : 17,
+        //                     color: featuredcurrentIndex == index
+        //                         ? darkTextColor
+        //                         : unSelectedtextColor,
+        //                     fontWeight: featuredcurrentIndex == index
+        //                         ? FontWeight.bold
+        //                         : FontWeight.w400),
+        //               ),
+        //             ),
+        //           );
+        //         }),
+        //   ),
+        // ),
         Container(
-          margin: EdgeInsets.symmetric(horizontal: 20),
-          width: width / 16,
-          height: height / 2.7,
-          child: RotatedBox(
-            quarterTurns: -1,
-            child: ListView.builder(
-                itemCount: featured.length,
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) {
-                  return GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        featuredcurrentIndex = index;
-                      });
-                    },
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 15),
-                      child: Text(
-                        featured[index],
-                        style: TextStyle(
-                            fontSize: featuredcurrentIndex == index ? 19 : 17,
-                            color: featuredcurrentIndex == index
-                                ? darkTextColor
-                                : unSelectedtextColor,
-                            fontWeight: featuredcurrentIndex == index
-                                ? FontWeight.bold
-                                : FontWeight.w400),
-                      ),
-                    ),
-                  );
-                }),
-          ),
-        ),
-        Container(
-          width: width / 1.2,
+          width: width / 1.04,
           height: height / 2.4,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
@@ -147,7 +147,7 @@ class _BodyState extends State<Body> {
                   );
                 },
                 child: Container(
-                  margin: EdgeInsets.all(15),
+                  margin: EdgeInsets.all(10),
                   width: width / 1.6,
                   child: Stack(
                     children: [
@@ -293,7 +293,7 @@ class _BodyState extends State<Body> {
   lastCategoriesWidget(width, height) {
     return Container(
       width: width,
-      height: height / 4,
+      height: height / 5,
       child: ListView.builder(
           itemCount: snkModels.length,
           scrollDirection: Axis.horizontal,

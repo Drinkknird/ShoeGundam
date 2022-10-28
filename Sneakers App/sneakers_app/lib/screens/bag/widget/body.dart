@@ -104,8 +104,8 @@ class _BodyBagState extends State<BodyBag> with SingleTickerProviderStateMixin {
   mainListView(width, height) {
     return Container(
       width: width,
-      height: height / 1.6,
-      // color: Colors.yellow,
+      height: height / 2,
+      //color: Colors.yellow,
       child: ListView.builder(
           scrollDirection: Axis.vertical,
           itemCount: bagModels.length,
@@ -118,11 +118,11 @@ class _BodyBagState extends State<BodyBag> with SingleTickerProviderStateMixin {
                 margin: EdgeInsets.symmetric(vertical: 10),
                 width: width,
                 height: height / 5.2,
-                // color: Colors.blue,
+                color: Colors.blue,
                 child: Row(
                   children: [
                     Container(
-                      // color: Colors.green,
+                      color: Colors.green,
                       width: width / 2.8,
                       height: height / 5.7,
                       child: Stack(children: [
@@ -142,10 +142,11 @@ class _BodyBagState extends State<BodyBag> with SingleTickerProviderStateMixin {
                             left: 13,
                             bottom: 15,
                             child: RotationTransition(
-                              turns: AlwaysStoppedAnimation(-40 / 360),
+                              turns: AlwaysStoppedAnimation(0 / 360),
                               child: Container(
                                 width: 130,
                                 height: 130,
+                                color: Colors.yellow,
                                 child: Image(
                                   image: AssetImage(
                                     bgmodel.imgAddress,
@@ -210,16 +211,20 @@ class _BodyBagState extends State<BodyBag> with SingleTickerProviderStateMixin {
                               SizedBox(
                                 width: 10,
                               ),
+                              //จำนวนสินค้า
                               Text(
                                 bgmodel.numOfShoe.toString(),
                                 style: TextStyle(
-                                    fontSize: 17, fontWeight: FontWeight.bold),
+                                    fontSize: 17, fontWeight: FontWeight.bold,color: Colors.white,),
                               ),
+                              
                               SizedBox(
                                 width: 10,
                               ),
+                              
                               GestureDetector(
-                                onTap: () {},
+                                onTap: () {
+                                },
                                 child: Container(
                                   width: 30,
                                   height: 30,

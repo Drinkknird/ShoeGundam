@@ -22,7 +22,7 @@ final List<Models> snkModels = [
     name: "NIKE",
     model: "AIR-MAX",
     price: 130.00,
-    imgAddress: "assets/images/nike1.png",
+    imgAddress: "assets/images/strike-fredom-test.png",
     modelColor: Color(0xffDE0106),
   ),
   Models(

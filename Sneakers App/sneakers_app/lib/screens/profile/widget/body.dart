@@ -172,7 +172,7 @@ class _BodyProfileState extends State<BodyProfile> {
     return FadeAnimation(delay: 2,
       child: Container(
         width: width,
-        height: height / 3,
+        height: (height / 3)-17,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
